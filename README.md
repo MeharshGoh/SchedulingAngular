@@ -1,27 +1,50 @@
-# Scheduling
+npm install bootstrap@latest --save
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+npm install jquery@latest --save
 
-## Development server
+npm install ngx-bootstrap --save
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm i ngx-bootstrap-datetime-popup
 
-## Code scaffolding
+ng add @angular/material
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm i date-fns 
 
-## Build
+ng add @ng-bootstrap/ng-bootstrap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ npm install angular-calendar --save
 
-## Running unit tests
+npm install --save flatpickr angularx-flatpickr
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Add these below lines in style.scss
 
-## Running end-to-end tests
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+body {
+    padding: 30px;
+     position: relative
+}
+body .bs-datepicker-container .bs-datepicker-head{
+  background-color: #fff;
+}
+body .bs-datepicker-container .bs-datepicker-head * {
+  color: #000;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-## Further help
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Add these below line in angular.json
+
+sytle [
+    "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
+]
+
+script : [
+     "node_modules/jquery/dist/jquery.min.js"
+]

@@ -1,0 +1,105 @@
+<accordion [isAnimated]="true">
+    <accordion-group heading="Physician Information">
+      <div >
+          <label>Physician Name</label>&nbsp;
+          <select>
+              <option>1</option>
+              <option>1</option>
+              <option>1</option>
+          </select>
+      </div><br>
+      <div>
+        <label for="id">Physician ID</label>&nbsp;
+       <input type="text" class="form-control" readonly>
+    </div><br>
+    <div>
+        <button class="btn btn-primary">Add Appointment</button>&nbsp;
+        <button class="btn btn-primary">Edit Appointment</button>&nbsp;
+        <button class="btn btn-primary">Delete Appointment</button>&nbsp;
+    </div>
+    </accordion-group>
+    <accordion-group heading="Meeting Details">
+        <div>
+            <label for="id">Meeting Title</label>&nbsp;
+           <input type="text" class="form-control" readonly>
+        </div><br>
+        <div>
+            <label for="id">Search</label>&nbsp;
+           <input type="search" value="search"> 
+        </div><br>
+        <div>
+            <label for="id">Paitent Details</label>&nbsp;
+           <table>
+               <thead>
+                   <tr>
+                       <th>List of Paitent</th>
+                       <!-- <th></th>
+                       <th></th>
+                       <th></th> -->
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr  *ngFor='let name of movies'>
+                       <td>{{name.title}}</td>
+                       <!-- <td></td>
+                       <td></td>
+                       <td></td> -->
+                   </tr>
+               </tbody>
+           </table>
+        </div><br>
+        <div>
+            <label>Descriptive information</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div>
+            <label>Physician Name</label>
+            <input type="text" class="form-control" >
+        </div><br>
+        <div class="row">
+            <div class="col-xs-12 col-12 col-md-4 form-group">
+              <input
+              type="text"
+              placeholder="Datepicker"
+              class="form-control"
+              bsDatepicker
+              [bsConfig]="{ isAnimated: true }">
+            </div>
+          </div>
+          <br>
+        <div>
+            <label>Patient Details</label>&nbsp;&nbsp;
+            <a href="">Click Here for More Details</a>
+        </div>
+    </accordion-group>
+    <accordion-group heading="Edit History">
+        <div>
+            <label for="id">List of Paitents</label>&nbsp;
+           <table>
+               <thead>
+                   <tr>
+                       <th>List of Paitent</th>
+                       <!-- <th></th>
+                       <th></th>
+                       <th></th> -->
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor='let name of movies'>
+                       <td>{{name.title}}</td>
+                       <!-- <td></td>
+                       <td></td>
+                       <td></td> -->
+                   </tr>
+               </tbody>
+           </table>
+        </div><br>
+        <div>
+            <button class="btn btn-primary">Update Appointment</button>
+        </div>
+    </accordion-group>
+    <!-- <accordion-group heading="Another group">
+      <p>Some content</p>
+    </accordion-group>
+  </accordion> -->
+
